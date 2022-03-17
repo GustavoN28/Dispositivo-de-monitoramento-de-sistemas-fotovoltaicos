@@ -4,4 +4,4 @@ Este projeto tem como finalidade o desenvolvimento de um dipositivo inteligente,
 Foram utilizados dois sensores, um de tensão (0V à 25V) e um de corrente(-20A à +20A). O códgio foi desenvolvido na plataforma Arduino Uno. 
 
 -Sensor de tensão 🚧
--Sensor de Corrente 🚧
+-Sensor de Corrente ✅
