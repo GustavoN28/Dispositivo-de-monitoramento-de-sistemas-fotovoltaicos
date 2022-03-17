@@ -14,12 +14,16 @@ void setup() {
 }
 
 void loop() {
-
+  leitura_sensor = 0;
+ for (int i = 0; i < 1000; i++)
+ {
+   leitura_sensor += (analogRead(PIN_A0) - 511);
+ }
  
-  leitura_sensor = (analogRead(PIN_A0) - 509);
+   
+  int leitura_filtro = leitura_sensor/1000;
   
-  
-  voltage_read = (leitura_sensor / 1024.0) * 5000; // em mV
+  voltage_read = (leitura_filtro / 1024.0) * 5000; // em mV
 
   current = voltage_read / sensibilidade;
 
